@@ -709,9 +709,8 @@ namespace Microsoft.AspNetCore.SignalR.Protocol
 
             var depth = reader.CurrentDepth;
             reader.Read();
-            SystemTextJsonExtensions.EnsureArrayStart(ref reader);
 
-            while (reader.TokenType != JsonTokenType.EndArray && depth < reader.CurrentDepth)
+            while (reader.TokenType != JsonTokenType.EndArray && reader.CurrentDepth > depth)
             {
                 if (arguments == null)
                 {
@@ -732,6 +731,7 @@ namespace Microsoft.AspNetCore.SignalR.Protocol
                 {
                     throw new InvalidDataException("Error binding arguments. Make sure that the types of the provided values match the types of the hub method being invoked.", ex);
                 }
+                reader.Read();
             }
 
             return arguments ?? Array.Empty<object>();

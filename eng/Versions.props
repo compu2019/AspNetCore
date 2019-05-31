@@ -44,7 +44,7 @@
     <SystemSecurityPrincipalWindowsPackageVersion>4.6.0-preview6.19279.8</SystemSecurityPrincipalWindowsPackageVersion>
     <SystemServiceProcessServiceControllerPackageVersion>4.6.0-preview6.19279.8</SystemServiceProcessServiceControllerPackageVersion>
     <SystemTextEncodingsWebPackageVersion>4.6.0-preview6.19279.8</SystemTextEncodingsWebPackageVersion>
-    <SystemTextJsonPackageVersion>4.6.0-preview6.19279.8</SystemTextJsonPackageVersion>
+    <SystemTextJsonPackageVersion>4.6.0-preview7.19281.6</SystemTextJsonPackageVersion>
     <SystemThreadingChannelsPackageVersion>4.6.0-preview6.19279.8</SystemThreadingChannelsPackageVersion>
     <!-- Only listed explicitly to workaround https://github.com/dotnet/cli/issues/10528 -->
     <MicrosoftNETCorePlatformsPackageVersion>3.0.0-preview6.19279.8</MicrosoftNETCorePlatformsPackageVersion>
